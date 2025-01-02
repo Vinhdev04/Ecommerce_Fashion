@@ -1,0 +1,135 @@
+/* Base CSS */
+
+/* Header CSS */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.header__img {
+  flex-shrink: 0;
+  width: 100px;
+  height: auto;
+}
+
+.header__logo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.header__navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  margin: 0 15px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #007bff;
+}
+
+.header__feature {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__admin {
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  border: 1px dashed #2738ce;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.header__admin:hover {
+  box-shadow: 0 0 10px rgb(99, 32, 99);
+}
+
+.header__icon i {
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.header__icon i:hover {
+  color: #007bff;
+}
+
+.header__menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .header__navbar {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__menu nav {
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .header__menu .navbar__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__menu .navbar__item {
+    margin: 0;
+    width: 100%;
+  }
+
+  .header__menu .navbar__link {
+    padding: 10px 20px;
+    width: 100%;
+    display: block;
+    color: #333;
+  }
+}
