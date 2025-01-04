@@ -18,6 +18,20 @@
     width: 100%;
     height: auto;
   }
+
+  .ticket-box {
+    margin-bottom: 10px;
+  }
+
+  .footer .row.footer__box {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer .copyright {
+    flex-direction: column;
+  }
 }
 
 /* Medium devices */
@@ -40,6 +54,20 @@
     width: 100%;
     height: auto;
   }
+
+  .ticket-box {
+    margin-bottom: 10px;
+  }
+
+  .footer .row.footer__box {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer .copyright {
+    flex-wrap: wrap;
+  }
 }
 
 /* Large devices */
@@ -54,6 +82,20 @@
 
   .collection__product {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ticket-box {
+    margin-bottom: 10px;
+  }
+
+  .footer .row.footer__box {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer .copyright {
+    flex-wrap: wrap;
   }
 }
 
@@ -102,19 +144,23 @@
     display: block;
   }
 
-  /* .collection__product {
-    grid-template-columns: repeat(3, 1fr);
-  } */
-
   .collection__product {
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
   }
+
   .collection__item a {
     width: 300px;
   }
+
   .collection__item a .collection__img {
     width: 300px;
+  }
+
+  .footer .row.footer__box {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -139,6 +185,12 @@
   .collection__img {
     width: 226px;
     height: 271px;
+  }
+
+  .footer .row.footer__box {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
