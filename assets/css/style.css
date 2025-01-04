@@ -2,7 +2,7 @@
 
 /* Header CSS */
 header {
-  background-color: #fff;
+  /* background-color: #fff; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -96,44 +96,6 @@ header {
   cursor: pointer;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  .header__navbar {
-    display: none;
-  }
-
-  .header__menu {
-    display: block;
-  }
-
-  .header__menu nav {
-    position: absolute;
-    top: 60px;
-    right: 15px;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-  }
-
-  .header__menu .navbar__list {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header__menu .navbar__item {
-    margin: 0;
-    width: 100%;
-  }
-
-  .header__menu .navbar__link {
-    padding: 10px 20px;
-    width: 100%;
-    display: block;
-    color: #333;
-  }
-}
-
 .hero .wrapper {
   border: 1px dashed #aeaeea;
 }
@@ -184,23 +146,50 @@ header {
   object-position: center;
 }
 
-.collection__product {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-}
-
 .collection__item a {
   text-align: center;
+  display: flex;
+  width: 200px;
+  height: auto;
+  flex-direction: column;
+}
+
+.collection__img {
+  width: 260px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+  overflow: hidden;
 }
 
 .collection__img img {
-  height: auto;
-  width: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.collection__img:hover img {
+  transform: scale(1.1);
 }
 
 .collection__info p {
-  min-width: 200px;
   text-align: left;
+}
+
+.collection__product {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.ticket {
+  padding-bottom: 50px;
+}
+
+.ticket .ticket-box .ticket__desc {
+  margin-top: -10px;
 }

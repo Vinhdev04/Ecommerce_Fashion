@@ -1,0 +1,157 @@
+/* Small devices */
+@media (max-width: 360px) {
+  .collection__product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .collection__item a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar__list,
+  .header__admin {
+    display: none;
+  }
+
+  .collection__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 361px) and (max-width: 480px) {
+  .collection__product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .collection__item a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar__list,
+  .header__admin {
+    display: none;
+  }
+
+  .collection__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Large devices */
+@media (min-width: 481px) and (max-width: 680px) {
+  .navbar__list {
+    display: none;
+  }
+
+  .header__feature .header__icon {
+    display: none;
+  }
+
+  .collection__product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet devices */
+@media (min-width: 681px) and (max-width: 768px) {
+  .header__navbar {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__menu nav {
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .header__menu .navbar__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__menu .navbar__item {
+    margin: 0;
+    width: 100%;
+  }
+
+  .header__menu .navbar__link {
+    padding: 10px 20px;
+    width: 100%;
+    display: block;
+    color: #333;
+  }
+
+  .header__feature .header__icon {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  /* .collection__product {
+    grid-template-columns: repeat(3, 1fr);
+  } */
+
+  .collection__product {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  .collection__item a {
+    width: 300px;
+  }
+  .collection__item a .collection__img {
+    width: 300px;
+  }
+}
+
+/* Tablet devices - Large */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header__menu {
+    display: block;
+  }
+
+  .header__feature .header__icon {
+    display: none;
+  }
+
+  .header__menu .navbar__list {
+    display: none;
+  }
+
+  .collection__product {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .collection__img {
+    width: 226px;
+    height: 271px;
+  }
+}
+
+/* Laptop devices */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .collection__product {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Destop devices */
+@media (min-width: 1281px) {
+  .collection__product {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
