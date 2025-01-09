@@ -62,7 +62,7 @@
   .footer .row.footer__box {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .footer .copyright {
