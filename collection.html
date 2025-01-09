@@ -28,66 +28,57 @@
     <!-- * Header* -->
     <header>
       <div class="container">
-        <div class="header__wrapper">
-          <div class="header__img">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
             <img
               src="./assets/frontend_assets/logo.png"
-              alt=""
+              alt="Logo"
               class="header__logo"
+              style="max-height: 40px"
             />
-          </div>
-          <nav class="header__navbar">
-            <ul class="navbar__list">
-              <li class="navbar__item">
-                <a href="index.html" class="navbar__link navbar__link--active"
-                  >Home</a
-                >
+          </a>
+          <!-- Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapsible Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
-              <li class="navbar__item">
-                <a href="collection.html" class="navbar__link">Collection</a>
+              <li class="nav-item">
+                <a class="nav-link" href="collection.html">Collection</a>
               </li>
-              <li class="navbar__item">
-                <a href="about.html" class="navbar__link">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
               </li>
-              <li class="navbar__item">
-                <a href="contact.html" class="navbar__link">Contact</a>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
-          </nav>
-          <div class="header__feature">
-            <div class="header__admin">Admin Page</div>
-            <div class="header__icon">
-              <i class="fa-solid fa-user"></i>
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-            <div class="header__menu">
-              <i class="fa-solid fa-bars"></i>
-              <nav class="header__navbar">
-                <ul class="navbar__list">
-                  <li class="navbar__item">
-                    <a
-                      href="index.html "
-                      class="navbar__link navbar__link--active"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="navbar__item">
-                    <a href="collection.html" class="navbar__link"
-                      >Collection</a
-                    >
-                  </li>
-                  <li class="navbar__item">
-                    <a href="about.html" class="navbar__link">About</a>
-                  </li>
-                  <li class="navbar__item">
-                    <a href="contact.html" class="navbar__link">Contact</a>
-                  </li>
-                </ul>
-              </nav>
+            <div class="d-flex align-items-center ms-lg-4">
+              <a href="login.html" class="btn btn-outline-secondary me-3"
+                >Admin Page</a
+              >
+              <div class="header__icon">
+                <a href="login.html" class="text-dark me-3 d-inline-flex"
+                  ><i class="fa-solid fa-user btn-acc"></i
+                ></a>
+                <i class="fa-solid fa-magnifying-glass me-3"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
 

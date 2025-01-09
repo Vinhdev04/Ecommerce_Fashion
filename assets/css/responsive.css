@@ -68,6 +68,18 @@
   .footer .copyright {
     flex-wrap: wrap;
   }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__menu i {
+    font-size: 20px;
+  }
+
+  .header__menu:active .navbar__list {
+    display: flex;
+  }
 }
 
 /* Large devices */

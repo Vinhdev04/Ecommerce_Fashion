@@ -280,16 +280,33 @@ header {
   overflow: hidden;
   transition: 0.3s linear;
 }
+
 .card__img img {
   transition: 0.3s linear;
   overflow: hidden;
   max-width: 100%;
 }
+
 .card:hover {
   box-shadow: 0 0 10px rgba(44, 59, 201, 0.1);
   transition: 0.3s linear;
   cursor: pointer;
 }
+
 .card .card__img:hover img {
   transform: scale(1.1);
+}
+
+.sign-up {
+  display: none;
+}
+
+.sign-up.show {
+  display: block;
+  transition: 0.3s linear;
+}
+
+.sign-in.hide {
+  display: none;
+  transition: 0.3s linear;
 }

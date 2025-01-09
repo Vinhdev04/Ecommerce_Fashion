@@ -81,107 +81,136 @@
       </div>
     </header>
 
-    <section class="about py-5">
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col">
-            <h3 class="text-center mb-4">ABOUT US</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-5">
-            <div class="shadow rounded mb-3">
-              <img src="./assets/images/banners.png" alt="" class="w-100" />
-            </div>
-          </div>
-
-          <div class="col-md-7 d-flex justify-content-center flex-column">
-            <p class="text-secondary small">
-              Forever was born out of a passion for innovation and a desire to
-              revolutionize the way people shop online. Our journey began with a
-              simple idea: to provide a platform where customers can easily
-              discover, explore, and purchase a wide range of products from the
-              comfort of their homes.
-            </p>
-            <p class="text-secondary small">
-              Since our inception, we've worked tirelessly to curate a diverse
-              selection of high-quality products that cater to every taste and
-              preference. From fashion and beauty to electronics and home
-              essentials, we offer an extensive collection sourced from trusted
-              brands and suppliers.
-            </p>
-            <h6>Our Mission</h6>
-            <p class="text-secondary small">
-              Our mission at Forever is to empower customers with choice,
-              convenience, and confidence. We're dedicated to providing a
-              seamless shopping experience that exceeds expectations, from
-              browsing and ordering to delivery and beyond.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about__info py-3">
+    <section class="sign-in py-5" id="sign-in">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h4 class="text-start">WHY CHOOSE US</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 border p-5">
-            <h6 class="fw-bold mb-3">Quality Assurance:</h6>
-            <p class="text-secondary small">
-              We meticulously select and vet each product to ensure it meets our
-              stringent quality standards.
-            </p>
-          </div>
+            <form action="#" class="d-flex flex-column align-items-center">
+              <div>
+                <h1 class="mb-4 text-center">Sign In</h1>
+              </div>
 
-          <div class="col-md-4 border p-5">
-            <h6 class="fw-bold mb-3">Convenience:</h6>
-            <p class="text-secondary small">
-              With our user-friendly interface and hassle-free ordering process,
-              shopping has never been easier.
-            </p>
-          </div>
+              <div class="col-md-6 col-lg-6 col-xl-4 col-sm-8 col-10">
+                <label for="email" class="p-0 fw-medium mb-1">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                  class="form-control input__email w-100 text-secondary py-2"
+                />
+              </div>
 
-          <div class="col-md-4 border p-5">
-            <h6 class="fw-bold mb-3">Exceptional Customer Service:</h6>
-            <p class="text-secondary small">
-              Our team of dedicated professionals is here to assist you the way,
-              ensuring your satisfaction is our top priority.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+              <div class="col-md-6 col-lg-6 col-xl-4 col-sm-8 col-10">
+                <label for="password" class="mt-2 mb-1 p-0 fw-medium"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                  class="form-control input__pass w-100 mb-3 text-secondary py-2"
+                />
+              </div>
 
-    <section class="about__contact py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h6 class="fw-bold">Subscribe now & get 20% off</h6>
-          </div>
-          <div class="col-12 text-center">
-            <p class="text-secondary small">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
-          <div class="col-12">
-            <form class="d-flex justify-content-center align-items-center">
-              <input
-                type="text"
-                class="form-control w-50 rounded-0 required text-secondary"
-                placeholder="Enter your email"
-              />
-              <button class="btn btn-dark rounded-0">SUBSCRIBE</button>
+              <div
+                class="col-md-6 col-lg-6 col-xl-4 col-sm-8 col-10 d-flex justify-content-between align-items-center"
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none text-dark d-flex justify-content-between align-items-center"
+                >
+                  <p class="mb-0 text-secondary small">Forgot your password?</p>
+                </a>
+                <a
+                  href="#"
+                  class="text-decoration-none text-dark d-flex justify-content-between align-items-center"
+                  ><p class="mb-0 text-secondary small createAcc">
+                    Create an account
+                  </p></a
+                >
+              </div>
+              <button class="btn btn-dark mt-3">Sign In</button>
             </form>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="sign-up py-5" id="sign-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form action="#" class="d-flex flex-column align-items-center">
+              <div>
+                <h1 class="mb-4 text-center">Sign Up</h1>
+              </div>
+
+              <div class="col-md-6 col-lg-6 col-xl-4 col-sm-8 col-10">
+                <label for="username" class="p-0 fw-medium mb-1">Name</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Username "
+                  required
+                  class="form-control input__name w-100 text-secondary py-2 mb-1"
+                />
+              </div>
+
+              <div class="col-md-6 col-lg-6 col-xl-4 col-sm-8 col-10">
+                <label for="email" class="p-0 fw-medium mb-1">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                  class="form-control input__email w-100 text-secondary py-2"
+                />
+              </div>
+
+              <div class="col-md-6 col-lg-6 col-xl-4 col-sm-8 col-10">
+                <label for="password" class="mt-2 mb-1 p-0 fw-medium"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                  class="form-control input__pass w-100 mb-3 text-secondary py-2"
+                />
+              </div>
+
+              <div
+                class="col-md-6 col-lg-6 col-xl-4 col-sm-8 col-10 d-flex justify-content-between align-items-center"
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none text-dark d-flex justify-content-between align-items-center"
+                >
+                  <p class="mb-0 text-secondary small">Forgot your password?</p>
+                </a>
+                <a
+                  href="#login"
+                  class="text-decoration-none text-dark d-flex justify-content-between align-items-center"
+                  ><p class="mb-0 text-secondary small signInAcc">
+                    Login Here
+                  </p></a
+                >
+              </div>
+              <button class="btn btn-dark mt-3 btn-signUp">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="row footer__box">
